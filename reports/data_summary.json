@@ -1,0 +1,45 @@
+{
+  "data_version": "44e3694753a6",
+  "rows": 5915,
+  "seed": 42,
+  "splits": {
+    "train": {
+      "filename": "train.csv",
+      "sha256": "4a38f3259245d92d1f700b3e22e9d5e742d8a81976e7b5cf83804a72484ae1dd",
+      "rows": 4731,
+      "legitimate": 3286,
+      "spam": 1445,
+      "fraction": 0.7998309382924768
+    },
+    "val": {
+      "filename": "val.csv",
+      "sha256": "d4996759f6bd6c8691fcd455de9f085c437e7fa53034d0220341a73dac9c1c5d",
+      "rows": 592,
+      "legitimate": 411,
+      "spam": 181,
+      "fraction": 0.10008453085376162
+    },
+    "test": {
+      "filename": "test.csv",
+      "sha256": "8c12333f6f4b2f1a3e5cbbd489a3d28883b87ddac17961c85894e57152fbe001",
+      "rows": 592,
+      "legitimate": 411,
+      "spam": 181,
+      "fraction": 0.10008453085376162
+    }
+  },
+  "near_duplicates": {
+    "method": "TF-IDF word unigrams/bigrams; cosine similarity",
+    "threshold": 0.95,
+    "token_pattern": "(?u)\\b\\w+\\b",
+    "grouping": "Connected matches stay together, regardless of label.",
+    "pair_count": 581,
+    "total_groups": 5589,
+    "multi_email_groups": 204,
+    "grouped_emails": 530,
+    "largest_group": 12,
+    "limitation": "This similarity rule does not catch every possible paraphrase or edited copy."
+  },
+  "cross_split_near_duplicate_pairs": 0,
+  "artifact_location": "Local only; no shared download location has been published."
+}
