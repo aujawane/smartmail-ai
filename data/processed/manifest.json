@@ -1,0 +1,111 @@
+{
+  "dataset": "SpamAssassin public corpus",
+  "data_version": "44e3694753a6",
+  "status": "frozen_local",
+  "seed": 42,
+  "columns": [
+    "email_id",
+    "text",
+    "label"
+  ],
+  "labels": {
+    "0": "legitimate",
+    "1": "spam"
+  },
+  "source_url": "https://spamassassin.apache.org/old/publiccorpus/",
+  "terms_url": "https://spamassassin.apache.org/old/publiccorpus/readme.html",
+  "terms_note": "Offered for spam-filter testing; message copyrights remain with original senders.",
+  "archives": [
+    {
+      "filename": "20030228_easy_ham.tar.bz2",
+      "url": "https://spamassassin.apache.org/old/publiccorpus/20030228_easy_ham.tar.bz2",
+      "sha256": "2b7b65904bcfcc31d2b5f51946f2d261370b257402cbbd62930b46ab83367438",
+      "size_bytes": 1612216
+    },
+    {
+      "filename": "20030228_easy_ham_2.tar.bz2",
+      "url": "https://spamassassin.apache.org/old/publiccorpus/20030228_easy_ham_2.tar.bz2",
+      "sha256": "b4bd3dc5ae5b40f38e99a0e41ad7d16b428b56e818e3a6ffa07330d62004dd38",
+      "size_bytes": 1077892
+    },
+    {
+      "filename": "20030228_hard_ham.tar.bz2",
+      "url": "https://spamassassin.apache.org/old/publiccorpus/20030228_hard_ham.tar.bz2",
+      "sha256": "ce2ce67880643dbde65ea7f85bffbfe4417349c4bd80b6b0de56262ae6b0a9c9",
+      "size_bytes": 1029898
+    },
+    {
+      "filename": "20030228_spam.tar.bz2",
+      "url": "https://spamassassin.apache.org/old/publiccorpus/20030228_spam.tar.bz2",
+      "sha256": "c08debc32413804949a866be45ef78195cec2cbafd1da744ed76cdb860589743",
+      "size_bytes": 1183768
+    },
+    {
+      "filename": "20050311_spam_2.tar.bz2",
+      "url": "https://spamassassin.apache.org/old/publiccorpus/20050311_spam_2.tar.bz2",
+      "sha256": "44280a0e28bf7645b2279e8e42659271ad82c6f40bf8d364dbda7f1df344a765",
+      "size_bytes": 2059029
+    }
+  ],
+  "cleaned_input_sha256": "57247e1bf359179d93399d8c9ed1211eba12e5e9292553fe3d63a6747e7cbc9d",
+  "cleaning": {
+    "stage": "cleaning_only",
+    "dataset_frozen": false,
+    "input_rows": 6046,
+    "empty_rows_removed": 0,
+    "conflicting_groups_removed": 0,
+    "conflicting_rows_removed": 0,
+    "exact_duplicates_removed": 131,
+    "output_rows": 5915,
+    "legitimate_rows": 4108,
+    "spam_rows": 1807,
+    "duplicate_rule": "Match after masking emails, ignoring case and whitespace.",
+    "near_duplicates_checked": false,
+    "input_sha256": "780d293168baec1a9b94f861a48b9e866c2956022a408fab9e6db230b4234ed5",
+    "output_sha256": "57247e1bf359179d93399d8c9ed1211eba12e5e9292553fe3d63a6747e7cbc9d"
+  },
+  "near_duplicates": {
+    "method": "TF-IDF word unigrams/bigrams; cosine similarity",
+    "threshold": 0.95,
+    "token_pattern": "(?u)\\b\\w+\\b",
+    "grouping": "Connected matches stay together, regardless of label.",
+    "pair_count": 581,
+    "total_groups": 5589,
+    "multi_email_groups": 204,
+    "grouped_emails": 530,
+    "largest_group": 12,
+    "limitation": "This similarity rule does not catch every possible paraphrase or edited copy."
+  },
+  "split_rule": "StratifiedGroupKFold: 10 folds, shuffle=True, seed=42; fold 0 val, fold 1 test, remaining folds train.",
+  "environment": {
+    "python": "3.12.3",
+    "pandas": "3.1.1",
+    "scikit_learn": "1.9.1"
+  },
+  "files": {
+    "train": {
+      "filename": "train.csv",
+      "sha256": "4a38f3259245d92d1f700b3e22e9d5e742d8a81976e7b5cf83804a72484ae1dd",
+      "rows": 4731,
+      "legitimate": 3286,
+      "spam": 1445,
+      "fraction": 0.7998309382924768
+    },
+    "val": {
+      "filename": "val.csv",
+      "sha256": "d4996759f6bd6c8691fcd455de9f085c437e7fa53034d0220341a73dac9c1c5d",
+      "rows": 592,
+      "legitimate": 411,
+      "spam": 181,
+      "fraction": 0.10008453085376162
+    },
+    "test": {
+      "filename": "test.csv",
+      "sha256": "8c12333f6f4b2f1a3e5cbbd489a3d28883b87ddac17961c85894e57152fbe001",
+      "rows": 592,
+      "legitimate": 411,
+      "spam": 181,
+      "fraction": 0.10008453085376162
+    }
+  }
+}
