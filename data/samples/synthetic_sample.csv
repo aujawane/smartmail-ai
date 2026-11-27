@@ -1,0 +1,41 @@
+email_id,text,label
+synthetic-001,"Subject: Claim your prize
+Body: You won a cash prize. Pay a processing fee to collect it.",1
+synthetic-002,"Subject: Study group
+Body: Can we meet at the library after class to review chapter three?",0
+synthetic-003,"Subject: Guaranteed investment
+Body: Double your money overnight with our guaranteed trading offer.",1
+synthetic-004,"Subject: Project meeting
+Body: Our team meeting is tomorrow at 2 PM. Please bring your notes.",0
+synthetic-005,"Subject: Account alert
+Body: Your account will close today. Reply with your password immediately.",1
+synthetic-006,"Subject: Assignment feedback
+Body: Your draft has been reviewed. Please check the comments before Friday.",0
+synthetic-007,"Subject: Exclusive deal
+Body: Buy miracle supplements now for instant results. Offer ends tonight.",1
+synthetic-008,"Subject: Lunch plans
+Body: Would you like to get lunch at the campus cafe after the lecture?",0
+synthetic-009,"Subject: Unclaimed inheritance
+Body: A distant relative left you millions. Send your bank details to proceed.",1
+synthetic-010,"Subject: Library reminder
+Body: The book you borrowed is due next week. You can renew it online.",0
+synthetic-011,"Subject: Work from home
+Body: Earn thousands each day with no experience. Buy our starter kit today.",1
+synthetic-012,"Subject: Office hours
+Body: I will hold extra office hours on Thursday to answer questions about the exam.",0
+synthetic-013,"Subject: Urgent transfer
+Body: Help move these funds overseas and receive a large commission. Send a deposit.",1
+synthetic-014,"Subject: Practice schedule
+Body: Practice has moved to the indoor gym because rain is expected.",0
+synthetic-015,"Subject: Cheap software
+Body: Get expensive software for almost nothing. Send payment to reserve your copy.",1
+synthetic-016,"Subject: Receipt
+Body: Thank you for your campus bookstore purchase. Your order is ready for pickup.",0
+synthetic-017,"Subject: Lottery winner
+Body: Your address was selected for a lottery jackpot. Send a fee to unlock payment.",1
+synthetic-018,"Subject: Room change
+Body: Today's discussion section will meet in room 204 instead of room 101.",0
+synthetic-019,"Subject: Business promotion
+Body: Reach a million customers instantly. Pay now for our secret mailing list.",1
+synthetic-020,"Subject: Presentation slides
+Body: I updated our slides with the meeting notes. Please review your section.",0
